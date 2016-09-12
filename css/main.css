@@ -22,9 +22,14 @@
 }
 .advt img {
   max-width: 40%;
+  padding: 25px;
 }
 .advt_media {
   margin-top: 30px;
+}
+.sample_img {
+  max-width: 50%;
+  margin: 20px;
 }
  footer .glyphicon {
     font-size: 20px;
