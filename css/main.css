@@ -1,45 +1,69 @@
-.carousel-inner >.item >img,
-.carousel-inner >.item>a>image{
+.carousel-inner>.item>img, .carousel-inner>.item>a>image {
     width: 100%;
     margin: auto;
 }
+
 .bg-grey {
-     background-color: #f6f6f6;
- }
+    background-color: #f6f6f6;
+}
+
 .slide_element {
-  position: relative;
-  margin: 30px 0;
+    position: relative;
+    margin: 30px 0;
 }
- .control_panel.right, .control_panel.left {
-  background-image: none;
+
+.control_panel.right, .control_panel.left {
+    background-image: none;
 }
+
 .wrapper {
-  padding: 0;
+    padding: 0;
 }
+
 .advt {
-  text-align: center;
-  text-decoration: none;
-  border: 2px
+    text-align: center;
+    text-decoration: none;
+    border: 2px
 }
-.advt a{
-  text-decoration: none;
+
+.advt a {
+    text-decoration: none;
 }
+
 .advt img {
-  max-width: 40%;
-  padding: 25px;
+    max-width: 40%;
+    padding: 25px;
 }
+
+.customized-btn {
+    margin: 20px;
+}
+
 .advt_media {
-  margin-top: 30px;
+    margin-top: 30px;
 }
+
+.advt_media img {}
+
 .sample_img {
-  max-width: 50%;
-  margin: 20px;
+    max-width: 50%;
+    margin: 20px;
 }
+
 .smp {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
- footer .glyphicon {
+
+.contact-info {
+    padding-left: 7%;
+}
+
+.about-element {
+    margin: 30px 0;
+}
+
+footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: #f4511e;
-   }
+}
