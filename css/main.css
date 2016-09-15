@@ -1,10 +1,6 @@
 .carousel-inner>.item>img, .carousel-inner>.item>a>image {
-    width: 100%;
+    height: 30%;
     margin: auto;
-}
-
-.bg-grey {
-    background-color: #f6f6f6;
 }
 
 .slide_element {
@@ -16,6 +12,15 @@
     background-image: none;
 }
 
+.col_wrapper {
+    background: url(http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
 .wrapper {
     padding: 0;
 }
@@ -23,16 +28,32 @@
 .advt {
     text-align: center;
     text-decoration: none;
-    border: 2px
+    border: 2px;
 }
 
-.advt a {
+.arrow_btn {
+    width: 10%;
+}
+
+.collapse_bg {
+    border: 0px;
+    background-color: white;
+    box-shadow: none;
+}
+
+
+/*.advt a {
     text-decoration: none;
+}*/
+
+.hidden_content {
+    margin-top: 10px;
 }
 
 .advt img {
-    max-width: 40%;
-    padding: 25px;
+    max-width: 10%;
+    border-radius: 50%;
+    top: -5px;
 }
 
 .customized-btn {
