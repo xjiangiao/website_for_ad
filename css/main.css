@@ -1,5 +1,7 @@
-.carousel-inner>.item>img, .carousel-inner>.item>a>image {
-
+.carousel-inner>.item>img, .carousel-inner>.item>a {
+    margin: auto;
+}
+.slide_img{
     margin: auto;
 }
 
