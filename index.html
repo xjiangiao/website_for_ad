@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#Home">Home</a>
+                <a class="navbar-brand" href="#myCarousel">Home</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -77,7 +77,7 @@
 
                 <div class="item">
                     <a href="pages/definition.html">
-                        <img src="mypic/mb.jpg" alt="2">
+                        <img src="mypic/mb.jpg" alt="2" >
                     </a>
 
                     <div class="carousel-caption">
@@ -304,7 +304,7 @@
     </script>
 
     <footer class="container-fluid text-center">
-        <a href="#Home" title="To Top">
+        <a href="#myCarousel" title="To Top">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
         <p>other inf</p>
@@ -314,7 +314,7 @@
     <script>
         //smooth scrolling
         $(document).ready(function() {
-            $(".navbar a, footer a[href='#Home']").on('click', function(event) {
+            $(".navbar a, footer a[href='#myCarousel']").on('click', function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
