@@ -1,10 +1,9 @@
-.carousel-inner>.item>img, .carousel-inner>.item>a {
+.carousel-inner>.item>.slide_img>img, .carousel-inner>.item>.slide_img>a>img {
     margin: auto;
 }
 .slide_img{
     margin: auto;
 }
-
 .slide_element {
     position: relative;
     margin: 30px 0;
