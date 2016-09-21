@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,6 +18,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+<<<<<<< HEAD
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-pill-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -27,6 +28,14 @@
                 <a class="navbar-brand" href="../index.html">
                     <img src="mypic/icon.svg" alt="Brand" class="brandIcon" />
                 </a>
+=======
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myCarousel">Home</a>
+>>>>>>> origin/master
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,6 +60,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+<<<<<<< HEAD
     <!--This is intro section -->
     <div class="intro">
         <div class="contain-fluid">
@@ -62,9 +72,62 @@
                 <p>
                     <a class="btn btn-primary btn-lg" href="#" role="button">Start</a>
                 </p>
+=======
+    <!--intro-->
+    <div class="slide_element">
+        <br>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <!--         <li data-target="#myCarousel" data-slide-to="3"></li> -->
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <a href="pages/definition.html" class="slide_img">
+                        <img src="mypic/rs.jpg" alt="0">
+                    </a>
+                    <div class="carousel-caption">
+                        <h3>e-testing</h3>
+                        <button type="button" class="btn btn-success ">Start</button>
+                        <p>We provide material and product Chemicals regulation consulting service according local and global Chemicals regulation.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="pages/definition.html" class="slide_img">
+                        <img src="mypic/ys.jpg" alt="1">
+                    </a>
+
+                    <div class="carousel-caption">
+                        <h3>e-testing</h3>
+                        <button type="button" class="btn btn-success">Start</button>
+                        <p>2. The greatest chemicals regulation in the world which include </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="pages/definition.html" class="slide_img">
+                        <img src="mypic/mb.jpg" alt="2" >
+                    </a>
+
+                    <div class="carousel-caption">
+                        <h3>e-testing</h3>
+                        <button type="button" class="btn btn-success">Start</button>
+                        <p>We can auto alert you to recheck your product when chemicals regulation update.</p>
+                    </div>
+                </div>
+>>>>>>> origin/master
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <!--This is main section-->
     <div class="main container-fluid">
         <div class="row myRow">
@@ -83,6 +146,55 @@
                     is text.
                 </p>
             </div>
+=======
+    <!--container section-->
+    <!--adv section-->
+    <div id="advt" class="container-fluid content">
+
+        <div class="col_wrapper">
+
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                <h1>Why choose E-testing</h1>
+                    <div class="row">
+                        <div class="col-sm-4 advt">
+                            <img src="mypic/diy.png" src="hammer" />
+                            <h3>Flexible</h3>
+                            <input type="image" src="mypic/arrow.png" class="arrow_btn" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="collapse hidden_content" id="collapse_1">
+                                <div class="well collapse_bg">
+                                    <p>
+                                        DIY product by yourself, there isn’t any limit!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 advt">
+                            <img src="mypic/expert.png" alt="expert" />
+                            <h3>Expert</h3>
+                            <input type="image" src="mypic/arrow.png" class="arrow_btn" data-toggle="collapse" data-target="#collapse_2" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="collapse hidden_content" id="collapse_2">
+                                <div class="well collapse_bg">
+                                    <p>
+                                        From experts, far better than experts. We will guarantee to provide an effective and accurate service!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 advt">
+                            <img alt="bigdata" src="mypic/bigdata.png">
+                            <h3>Big Data</h3>
+                            <input type="image" src="mypic/arrow.png" class="arrow_btn" data-toggle="collapse" data-target="#collapse_3" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="collapse hidden_content" id="collapse_3">
+                                <div class="well collapse_bg">
+                                    <p>
+                                        Global chemical regulations are summarized in here.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+>>>>>>> origin/master
 
         </div>
         <div class="background-image">
@@ -216,7 +328,59 @@
 
                 </div>
             </div>
+<<<<<<< HEAD
     </footer>
+=======
+        </div>
+    </div>
+    <script type='text/javascript'>
+        function init_map() {
+            var myOptions = {
+                zoom: 15,
+                center: new google.maps.LatLng(30.308613, 120.2583982),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+            marker = new google.maps.Marker({
+                map: map,
+                position: new google.maps.LatLng(30.308613, 120.2583982)
+            });
+            infowindow = new google.maps.InfoWindow({
+                content: '<strong>Title</strong><br>30.308613, 120.2583982<br>'
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+            });
+            infowindow.open(map, marker);
+        }
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+    <footer class="container-fluid text-center">
+        <a href="#myCarousel" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>other inf</p>
+    </footer>
+
+
+    <script>
+        //smooth scrolling
+        $(document).ready(function() {
+            $(".navbar a, footer a[href='#myCarousel']").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        })
+    </script>
+>>>>>>> origin/master
 </body>
 
 </html>
