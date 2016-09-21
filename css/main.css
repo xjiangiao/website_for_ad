@@ -1,91 +1,109 @@
-.carousel-inner>.item>img, .carousel-inner>.item>a>image {
+/*This is for Navbar*/
 
+.myNavbar {
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.brandIcon {
+    max-width: 20px;
+    top: -10px;
+}
+
+
+/*This is for Intro Section*/
+
+.intro {
+    background: url(../mypic/background-1-1.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 50em;
+}
+
+.myJumbotron {
+    padding-top: 30em;
     margin: auto;
+    background-color: transparent;
+    text-align: center;
 }
 
-.slide_element {
-    position: relative;
-    margin: 30px 0;
+
+/*This is for main Section*/
+
+.icon {
+    max-width: 20em;
 }
 
-.control_panel.right, .control_panel.left {
-    background-image: none;
+.myRow {
+    background-color: rgba(242, 242, 242, 0.9);
+    padding: 5em 0;
 }
 
-.col_wrapper {
-    background: url(http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg) no-repeat center center fixed;
+.myRow2 {
+    background-color: rgba(64, 64, 64, 0.9);
+    color: white;
+    padding: 5em 0;
+}
+
+.main {
+    background: url(../mypic/background-2.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
-.bg-grey {
-    background-color: #f6f6f6;
+.background-image {
+    height: 20em;
 }
 
-.wrapper {
-    padding: 0;
-}
+
+/*This is for Advtange Section*/
 
 .advt {
+    background: url(../mypic/background-3.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/*this is for demo*/
+.icon-small {
+  max-width: 10em;
+}
+.myDemo {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+    background-color: rgba(242, 242, 242, 1);
     text-decoration: none;
-    border: 2px;
+}
+.myDemo a:hover{
+  text-decoration: none;
+}
+.Support {
+  display: block;
+    padding: 3em;
 }
 
-.arrow_btn {
-    width: 10%;
+.Try {
+  display: block;
+    padding: 3em;
 }
 
-.collapse_bg {
-    border: 0px;
-    background-color: white;
-    box-shadow: none;
-    height: 100px;
+.Demo {
+  display: block;
+    padding: 3em;
 }
-
-
-/*.advt a {
-    text-decoration: none;
-}*/
-
-.hidden_content {
-    margin-top: 10px;
+/*This is for footer*/
+.foot {
+  text-align: center;
+  padding: 5em;
 }
+.social {
 
-.advt img {
-    max-width: 10%;
-    border-radius: 50%;
-    top: -5px;
+  max-width: 3em;
+  padding: 0.5em;
 }
-
-.customized-btn {
-    margin: 20px;
+.foot-col-1 {
+  display: flex;
+  justify-content: space-around;
 }
-
-.advt_media {
-    margin-top: 30px;
-}
-
-.advt_media img {}
-
-.sample_img {
-    max-width: 50%;
-    margin: 20px;
-}
-
-.smp {
-    margin-bottom: 30px;
-}
-
-.contact-info {
-    padding-left: 7%;
-}
-
-.about-element {
-    margin: 30px 0;
-}
-
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
+.contact {
+  text-align: left;
 }
