@@ -1,0 +1,150 @@
+/*This is for variable*/
+$background-color-1: rgba(242, 242, 242, 0.9);
+$background-color-2: rgba(64, 64, 64, 0.9);
+$background-color-3: rgba(242, 242, 242, 1);
+/*This is for Navbar*/
+.myNavbar {
+    margin-bottom: 0;
+    opacity: 0.9;
+
+    .brandIcon {
+        max-width: 20px;
+        top: -10px;
+    }
+
+    .dropdown .dropdown-menu {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    .dropdown.open .dropdown-menu {
+        max-height: 500px;
+        opacity: 1;
+    }
+    .navpill::after{
+      position: absolute;
+      top: 80%;
+      left: 20%;
+      width: 60%;
+      height: 1px;
+      background: #ff6666;
+      content: '';
+      opacity: 0;
+      -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+      transition: height 0.3s, opacity 0.3s, transform 0.3s;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    .navpill:hover::after {
+    	height: 2px;
+    	opacity: 1;
+    	-webkit-transform: translateY(0px);
+    	-moz-transform: translateY(0px);
+    	transform: translateY(0px);
+    }
+    .navpill-toggle::after{
+      @extend .navpill;
+      left: 18%;
+      width: 65%;
+    }
+}
+/*This is for Intro Section*/
+.intro {
+    background: url("../mypic/background-1-1.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 50em;
+
+    .myJumbotron {
+        padding-top: 30em;
+        margin: auto;
+        background-color: transparent;
+        text-align: center;
+    }
+}
+/*This is for main Section*/
+.main {
+    background: url("../mypic/background-2.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    .icon {
+        max-width: 20em;
+    }
+
+    .myRow {
+        background-color: $background-color-1;
+        padding: 5em 0;
+    }
+
+    .myRow2 {
+        background-color: $background-color-2;
+        color: white;
+        padding: 5em 0;
+    }
+
+    .background-image {
+        height: 20em;
+    }
+}
+/*This is for Advtange Section*/
+.advt {
+    background: url("../mypic/background-3.jpg") no-repeat center center fixed;
+    background-size: cover;
+    .myRow2 {
+        background-color: $background-color-2;
+        color: white;
+        padding: 5em 0;
+    }
+}
+/*this is for demo*/
+.myDemo {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: $background-color-3;
+    text-decoration: none;
+    a:hover {
+        text-decoration: none;
+    }
+    .icon-small {
+      max-width: 10em;
+    }
+    .Support {
+        display: block;
+        padding: 3em;
+    }
+
+    .Try {
+        display: block;
+        padding: 3em;
+    }
+
+    .Demo {
+        display: block;
+        padding: 3em;
+    }
+}
+/*This is for footer*/
+.foot {
+    text-align: center;
+    padding: 5em;
+    .foot-col-1 {
+      display: blcok;
+      justify-content: space-around;
+      .social {
+        max-width: 3em;
+        padding: 0.5em;
+      }
+    }
+    .contact {
+      text-align: left;
+    }
+}
