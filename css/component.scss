@@ -1,0 +1,51 @@
+/*This is for sign-up area*/
+.login-content {
+  text-align: center;
+
+  width: 30%;
+
+//    display: none;
+    .icon {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 2em;
+        opacity: 0.3;
+        width: 1.5em;
+        height: 2em;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            height: 50%;
+            left: 1em;
+            width: 2px;
+            background-color: #333;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .customBtn{
+      height: 3em;
+      width: 100%;
+      background-color: #ff7769;
+      border: none;
+      border-radius: 3px;
+    }
+}
+.sign-up-content {
+  @extend .login-content;
+}

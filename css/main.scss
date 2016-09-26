@@ -2,6 +2,15 @@
 $background-color-1: rgba(242, 242, 242, 0.9);
 $background-color-2: rgba(64, 64, 64, 0.9);
 $background-color-3: rgba(242, 242, 242, 1);
+$animation-1: all 0.3s;
+/*This is for minxins*/
+@mixin dropdown-animation($animation-1) {
+    -webkit-transition: $animation-1;
+    -moz-transition: $animation-1;
+    -ms-transition: $animation-1;
+    -o-transition: $animation-1;
+    transition: $animation-1;
+}
 /*This is for Navbar*/
 .myNavbar {
     margin-bottom: 0;
@@ -13,11 +22,7 @@ $background-color-3: rgba(242, 242, 242, 1);
     }
 
     .dropdown .dropdown-menu {
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
+        @include dropdown-animation($animation-1);
         max-height: 0;
         display: block;
         overflow: hidden;
@@ -28,34 +33,38 @@ $background-color-3: rgba(242, 242, 242, 1);
         max-height: 500px;
         opacity: 1;
     }
-    .navpill::after{
-      position: absolute;
-      top: 80%;
-      left: 20%;
-      width: 60%;
-      height: 1px;
-      background: #ff6666;
-      content: '';
-      opacity: 0;
-      -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-      -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
-      transition: height 0.3s, opacity 0.3s, transform 0.3s;
-      -webkit-transform: translateY(-10px);
-      -moz-transform: translateY(-10px);
-      transform: translateY(-10px);
+
+    .navpill::after {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        width: 60%;
+        height: 1px;
+        background: #ff6666;
+        content: '';
+        opacity: 0;
+        -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+        -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+        transition: height 0.3s, opacity 0.3s, transform 0.3s;
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        transform: translateY(-10px);
     }
+
     .navpill:hover::after {
-    	height: 2px;
-    	opacity: 1;
-    	-webkit-transform: translateY(0px);
-    	-moz-transform: translateY(0px);
-    	transform: translateY(0px);
+        height: 2px;
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
     }
-    .navpill-toggle::after{
-      @extend .navpill;
-      left: 18%;
-      width: 65%;
+
+    .navpill-toggle::after {
+        @extend .navpill;
+        left: 18%;
+        width: 65%;
     }
+
 }
 /*This is for Intro Section*/
 .intro {
@@ -98,6 +107,7 @@ $background-color-3: rgba(242, 242, 242, 1);
 .advt {
     background: url("../mypic/background-3.jpg") no-repeat center center fixed;
     background-size: cover;
+
     .myRow2 {
         background-color: $background-color-2;
         color: white;
@@ -111,12 +121,15 @@ $background-color-3: rgba(242, 242, 242, 1);
     text-align: center;
     background-color: $background-color-3;
     text-decoration: none;
+
     a:hover {
         text-decoration: none;
     }
+
     .icon-small {
-      max-width: 10em;
+        max-width: 10em;
     }
+
     .Support {
         display: block;
         padding: 3em;
@@ -136,15 +149,18 @@ $background-color-3: rgba(242, 242, 242, 1);
 .foot {
     text-align: center;
     padding: 5em;
+
     .foot-col-1 {
-      display: blcok;
-      justify-content: space-around;
-      .social {
-        max-width: 3em;
-        padding: 0.5em;
-      }
+        display: blcok;
+        justify-content: space-around;
+
+        .social {
+            max-width: 3em;
+            padding: 0.5em;
+        }
     }
+
     .contact {
-      text-align: left;
+        text-align: left;
     }
 }
