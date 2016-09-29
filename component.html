@@ -5,97 +5,89 @@
     <meta charset="utf-8">
     <title>Compontent for test</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/component.min.css">
 </head>
 
 <body>
-    <a data-toggle="modal" data-target="#login-content" role="button">Login</a>
-    <div class="modal fade" id="login-content" tabindex="-1" role="dialog">
-        <div class="modal-dialog  login-content" role="document">
+    <a data-toggle="modal" data-target="#account-content" role="button" id="login_btn">Login</a>
+    <div class="modal fade" id="account-content" tabindex="-1" role="dialog">
+        <div class="modal-dialog custom-content" role="document">
             <div class="modal-content">
-                <div class="modal-body">
+                <div class="modal-header">
                     <span class="close icon" data-dismiss="modal" aria-label="Close" role="button"></span>
-                    <h2>Login</h2>
-                    <form>
-                        <div class="form-group">
-                            <label class="sr-only" for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Email">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="inputPassword">Password</label>
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <input type="button" value="Login" class="customBtn">
-
-                        <input type="button" value="Sign Up" class="customBtn" role="button" data-toggle="modal" data-target="#sign-up-content">
-                    </form>
-
+                    <h2 id="form_header">Sign In</h2>
                 </div>
+                <div id="modal_form">
+                    <div class="modal-body">
+                        <!--This is for login-area form-->
+                        <div class="login" id="login_form">
+                            <form>
+                                <div class="form-group">
+                                    <label class="sr-only" for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                              <input type="checkbox">Remember
+                            </label>
+                                </div>
+                                <input type="button" value="Sign" class="customBtn">
+                                <div class="additional-area">
+                                    <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                    <button id="login_register_btn" type="button" class="btn btn-link" style="float:right">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--This is for register-area form-->
+                        <div class="register" id="register_form" style="display:none;">
+                            <form>
+                                <div class="form-group">
+                                    <label class="sr-only" for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter Email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="checkPassword">Password</label>
+                                    <input type="password" class="form-control" placeholder="Repeat Password">
+                                </div>
+                                <input type="button" value="Sign Up" class="customBtn">
+                                <div class="additional-area">
+                                    <button id="register_sign_btn" type="button" class="btn btn-link">Log In</button>
+                                    <button id="register_lost_btn" type="button" class="btn btn-link" style="float:right">Lost Password?</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--This is for forget-password-area form-->
+                        <div class="forget" id="forget_form" style="display:none;">
+                            <form>
+                                <div class="form-group">
+                                    <label class="sr-only" for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter Email">
+                                </div>
+                                <input type="button" value="Send Email" class="customBtn">
+                                <div class="additional-area">
+                                    <button id="forget_sign_btn" type="button" class="btn btn-link">Log In</button>
+                                    <button id="forget_register_btn" type="button" class="btn btn-link" style="float:right">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-
-
-    <a data-toggle="modal" data-target="#sign-up-content" role="button">sign up</a>
-    <div class="modal fade" id="sign-up-content" tabindex="-1" role="dialog">
-        <div class="modal-dialog sign-up-content" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                  <span class="close icon"data-dismiss="modal" aria-label="Close" role="button"></span>
-                  <h2>Sign Up</h2>
-                  <form>
-                      <div class="form-group">
-                          <label class="sr-only" for="inputEmail">Email</label>
-                          <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Email">
-                      </div>
-                      <div class="form-group">
-                          <label class="sr-only" for="inputPassword">Password</label>
-                          <input type="password" class="form-control" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                          <label class="sr-only" for="checkPassword">Password</label>
-                          <input type="password" class="form-control" placeholder="Repeat Password">
-                      </div>
-                      <input type="button" value="Sign Up" class="customBtn">
-                  </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="sign-up-content" id="sign-up-content">
-
-    </div>
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script type="text/javascript" src="script/script.js"></script>
 </body>
 
 </html>

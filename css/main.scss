@@ -3,14 +3,6 @@ $background-color-1: rgba(242, 242, 242, 0.9);
 $background-color-2: rgba(64, 64, 64, 0.9);
 $background-color-3: rgba(242, 242, 242, 1);
 $animation-1: all 0.3s;
-/*This is for minxins*/
-@mixin dropdown-animation($animation-1) {
-    -webkit-transition: $animation-1;
-    -moz-transition: $animation-1;
-    -ms-transition: $animation-1;
-    -o-transition: $animation-1;
-    transition: $animation-1;
-}
 /*This is for Intro Section*/
 .intro {
     background: url("../mypic/background-1-1.png") no-repeat center center fixed;
