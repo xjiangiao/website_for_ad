@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>E-tesing Service</title>
     <meta charset="utf-8" />
@@ -7,8 +8,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/component.min.css">
+    <link rel="stylesheet" href="/website_for_ad/css/main.min.css">
+    <link rel="stylesheet" href="/website_for_ad/css/component.min.css">
 </head>
 
 <body>
@@ -22,26 +23,28 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-                <a class="navbar-brand" href="../website_for_ad/index.html#">
-                    <img src="mypic/icon.svg" alt="Brand" class="brandIcon" />
+                <a class="navbar-brand" href="/website_for_ad/index.html#">
+                    <img src="/website_for_ad/mypic/icon.svg" alt="Brand" class="brandIcon" />
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse"  id="navbar-pill-collapse">
+            <div class="collapse navbar-collapse" id="navbar-pill-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="navpill" href="../website_for_ad/index.html">Home</a></li>
-                    <li><a class="navpill" href="#">About</a></li>
+                    <li><a class="navpill" href="/website_for_ad/index.html">Home</a></li>
+                    <li><a class="navpill" href="/website_for_ad/pages/about.html">About</a></li>
                     <li class="dropdown">
                         <a class="navpill-toggle" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a class="navpill-dropdown" href="#">Action</a></li>
-                            <li><a class="navpill-dropdown" href="#">Another action</a></li>
-                            <li><a class="navpill-dropdown" href="#">Something else here</a></li>
+                            <li><a class="navpill-dropdown" href="#">Material Analysis</a></li>
+                            <li><a class="navpill-dropdown" href="#">Product Analysis</a></li>
+                            <li><a class="navpill-dropdown" href="#">Chemical Regulation Query</a></li>
+                            <li><a class="navpill-dropdown" href="#">Monitoring Regulation Update </a></li>
+                            <li><a class="navpill-dropdown" href="#">Get Report</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a class="navpill-dropdown" href="#">Separated link</a></li>
+                            <li><a class="navpill-dropdown" href="#">Get help with Expert</a></li>
                         </ul>
                     </li>
-                    <li><a class="navpill" href="../index.html">Contact</a></li>
+                    <li><a class="navpill" href="/website_for_ad/pages/contact.html">Contact</a></li>
                     <li><a class="navpill" data-toggle="modal" data-target="#account-content" role="button" id="login_btn">Login</a></li>
                 </ul>
             </div>
@@ -49,7 +52,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-	<!--This is signin area-->
+    <!--This is signin area-->
     <div class="modal fade" id="account-content" tabindex="-1" role="dialog">
         <div class="modal-dialog custom-content" role="document">
             <div class="modal-content">
@@ -125,7 +128,7 @@
         </div>
     </div>
     <!--This is intro section -->
-    <div class="intro">
+    <!--    <div class="intro">
         <div class="contain-fluid">
             <div class="jumbotron myJumbotron">
                 <h1>E-testing Service</h1>
@@ -133,10 +136,66 @@
                     This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.
                 </p>
                 <p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Start</a>
+                    <a class="btn btn-primary" href="#" role="button">Start</a>
                 </p>
             </div>
         </div>
+    </div>-->
+    <div class="intro">
+        <div class="container-fluid">
+            <div class="introContent">
+                <ul class="nav nav-tabs" id='eventForListener'>
+                    <li id="avtg_btn"><a role="button">Advantage</a></li>
+                    <li><a role="button" id="avtg1_btn">Advantage1</a></li>
+                    <li><a role="button" id="avtg2_btn">Advantage2</a></li>
+                    <li><a role="button" id="avtg3_btn">Advantage3</a></li>
+                    <li><a role="button" id="avtg4_btn">Advantage4</a></li>
+                    <li><a role="button" id="avtg5_btn">Advantage5</a></li>
+                </ul>
+                <div class="avtgHeader" id="avtg">
+                    <h1>This is header</h1>
+                    <p>
+                        This is Text.This is Text.This is Text.This is Text.
+                    </p>
+                </div>
+                <div class="avtg" id="avtg1" style="display:none;">
+                    <h2>Double save: save time&amp;money</h2>
+                    <p>
+                        It is unnecessary to inspection institutions or anyone. Just do it yourself on E-Testing. You will obtain the regulatory compliance assessment you want. Anything for free and save you time.
+                    </p>
+                </div>
+                <div class="avtg" id="avtg2" style="display:none;">
+                    <h2>Flexible: According to your needs to build your product</h2>
+                    <p>
+                        1. Our database contains all of the current standard materials，You can assemble your products according to these materials
+                        </br>
+                        2. If you use some special materials, we can also add your material for you.
+                    </p>
+                </div>
+                <div class="avtg" id="avtg3" style="display:none;">
+                    <h2>intelligent system&amp;Experts team </h2>
+                    <p>
+                        Better than experts. E-Testing’s intelligent system on regulations enables it to analyze materials with incredibly precise as human experts do, with higher efficiently.
+                    </p>
+                </div>
+                <div class="avtg" id="avtg4" style="display:none;">
+                    <h2>The application of big data.</h2>
+                    <p>
+                        1. Our database contains more than 300 chemical regulations around the world
+                        </br>
+                        2. Our services can cover more than 50 countries and regions
+                    </p>
+                </div>
+                <div class="avtg" id="avtg5" style="display:none;">
+                    <h2>Real-time update</h2>
+                    <p>
+                        We can ensure that our chemical regulations are updated in real time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <!--This is main section-->
     <div class="main container-fluid">
@@ -147,14 +206,12 @@
             <div class="col-md-5 col-md-offset-1">
                 <h1>Header</h1>
                 <p>
-                    This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.
+                    At E-testing we have two teams of experts. One team is composed of experts in chemical testing regulations, and another team consists of big data experts. Combined with the cooperation of two expert teams, we launched our E-testing services.</br>
+                    Our E-testing service is totally free and it can help you automatically analyzed the structure and material of the product according to the requirements of more than 300 chemicals regulations from over 50 different countries. Finally,
+                    you will get a report on whether or not your product will pass the chemical regulation in the market where you are going to market it. If your product encounters some problems on chemical regulation, our service will give you some
+                    suggestions to solve it.</br> Our goal is to significantly reduce your risk of penalties for violating chemical regulations
                 </p>
+                <a class="btn btn-primary" href="#" role="button">Learn More</a>
             </div>
         </div>
         <div class="background-image">
@@ -164,14 +221,9 @@
             <div class="col-md-5 col-md-offset-2">
                 <h1>Header</h1>
                 <p>
-                    This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.
+                    Our database contains more than 300 chemical regulations from more than 50 countries and it is the world's largest database of chemical regulations.
                 </p>
+                <a class="btn btn-primary" href="#" role="button">Learn More</a>
             </div>
             <div class="col-md-3 col-md-offset-1">
                 <img src="mypic/icon-2.png" alt="icon" class="icon" />
@@ -185,16 +237,18 @@
                 <img src="mypic/icon-3.png" alt="icon" class="icon" />
             </div>
             <div class="col-md-5 col-md-offset-1">
-                <h1>Header</h1>
-                <p>
-                    This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This is text.This
-                    is text.
-                </p>
+                <h1>Our Chemical Regulation Consulting Services Include:</h1>
+                <ul>
+                    <li>
+                        E-Material Analysis Services
+                    </li>
+                    <li>E-Product Analysis Service</li>
+                    <li>E-Chemical Regulation Query Service</li>
+                    <li>E-Monitoring Chemical regulation update Service</li>
+                    <li>E-Chemical Regulation Service based on Chemical inspection report</li>
+                    <li>Human Assistance Services</li>
+                </ul>
+                <a class="btn btn-primary" href="#" role="button">Learn More</a>
             </div>
         </div>
     </div>
@@ -232,7 +286,7 @@
     <!--This is Demo&Support section-->
     <div class="container-fluid myDemo">
         <div class="Support">
-            <a href="#">
+            <a href="/website_for_ad/pages/support.html">
                 <img class="icon-small" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6IzMyQkVBNjsiIGQ9Ik0yNTUuNiwwQzEzMy4yLDAsMzQsOTkuMiwzNCwyMjEuNkMzNCwyOTUuMiw2OS4yLDM2MCwxMjQuNCw0MDB2MTEybDkwLjQtNzJjMTMuNiwyLjQsMjcuMiw0LDQxLjYsNCAgQzM3OC44LDQ0NCw0NzgsMzQ0LjgsNDc4LDIyMi40UzM3OCwwLDI1NS42LDB6Ii8+CjxnPgoJPHJlY3QgeD0iOTQuOCIgeT0iMTgxLjYiIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiB3aWR0aD0iMzIxLjYiIGhlaWdodD0iMTYiLz4KCTxyZWN0IHg9IjEzMC44IiB5PSIyNDUuNiIgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIHdpZHRoPSIyNTAuNCIgaGVpZ2h0PSIxNiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
                 />
                 <h3>Support</h3>
@@ -246,14 +300,27 @@
             </a>
         </div>
         <div class="Demo">
-            <a href="#">
+            <a data-toggle="modal" data-target="#demo" role="button">
                 <img class="icon-small" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0NjAgNDYwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NjAgNDYwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8cGF0aCBzdHlsZT0iZmlsbDojNTQ4OEE4OyIgZD0iTTIzMCwwQzEwMi45NzQsMCwwLDEwMi45NzUsMCwyMzBjMCw4OS43NTcsNTEuNDE0LDE2Ny41MDUsMTI2LjM5OCwyMDUuNGwzMzAuNDg3LTE2Ny40NTggICBDNDU4LjkzNCwyNTUuNiw0NjAsMjQyLjkyNCw0NjAsMjMwQzQ2MCwxMDIuOTc1LDM1Ny4wMjUsMCwyMzAsMHoiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMzNjY3OTY7IiBkPSJNNDU2Ljg2OCwyNjcuOTM2TDMyNy4xMDUsMTM4LjE3M2wtMjEuNzUsMjMuNDcxbC0zMi41NDctMzIuNTQ3bC0xNS4yMzMsMTUuMjI3TDE2NC4yMTIsNTAuOTYgICB2MzM4Ljg4M2wxNjkuODE0LDQ1LjMzOUMzOTcuOTg5LDQwMi42ODMsNDQ0LjcxNSwzNDEuMTUsNDU2Ljg2OCwyNjcuOTM2eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzI3M0I3QTsiIGQ9Ik0xMjYuNDA1LDQzNS4zOTJDMTU3LjU0LDQ1MS4xMjYsMTkyLjczMiw0NjAsMjMwLDQ2MGMyLjUzMywwLDUuMDUzLTAuMDU2LDcuNTY2LTAuMTM3ICAgbDEyLjQyOS05NC4yNDNsLTEyMy41OSwyMS45N1Y0MzUuMzkyeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzEyMTE0OTsiIGQ9Ik0yMjkuOTk1LDQ2MGMzNy4yNzMsMCw3Mi40NjYtOC44NzQsMTAzLjYtMjQuNjA5VjM4Ny41OWwtMTAzLjYtMjEuOTdWNDYweiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzM4QzZEOTsiIGQ9Ik0xMjYuNDA1LDY2LjYyYzAtMTIuMjMsOS45MS0yMi4xNSwyMi4xNS0yMi4xNWMxMi4yMywwLDIyLjE0LDkuOTIsMjIuMTQsMjIuMTV2MTMyLjM0bC00NC4yOS0yMCAgIEMxMjYuNDA1LDE3OC45NiwxMjYuNDA1LDY2LjYyLDEyNi40MDUsNjYuNjJ6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojMzhDNkQ5OyIgZD0iTTE4MC42OTUsMTM1LjY5YzAtMTIuMjMsOS45Mi0yMi4xNSwyMi4xNi0yMi4xNWMxMi4yMywwLDIyLjE0LDkuOTIsMjIuMTQsMjIuMTV2NjMuMjdoLTQ0LjNWMTM1LjY5ICAgeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzM4QzZEOTsiIGQ9Ik0yMzQuOTk1LDE0NC43NmMwLTEyLjIzLDkuOTItMjIuMTUsMjIuMTUtMjIuMTVjMTIuMjQsMCwyMi4xNSw5LjkyLDIyLjE1LDIyLjE1djU0LjJoLTQ0LjMgICBMMjM0Ljk5NSwxNDQuNzZMMjM0Ljk5NSwxNDQuNzZ6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojMzhDNkQ5OyIgZD0iTTI4OS4yOTUsMTUzLjgzYzAtMTIuMjMsOS45Mi0yMi4xNCwyMi4xNS0yMi4xNGMxMi4yMywwLDIyLjE1LDkuOTEsMjIuMTUsMjIuMTR2MjUuMTNsLTQ0LjMsMjAgICBWMTUzLjgzeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6IzcxRTJGMDsiIGQ9Ik0xMjYuNDA1LDM1MS4wNGwxMDMuNTksMzBsMTAzLjYtMzBWMTc4Ljk2aC0yMDcuMTlDMTI2LjQwNSwxNzguOTYsMTI2LjQwNSwyOTcuNTIsMTI2LjQwNSwzNTEuMDR6Ii8+Cgk8cG9seWdvbiBzdHlsZT0iZmlsbDojQzJGQkZGOyIgcG9pbnRzPSIyMjkuOTk1LDM1MS4wNCAzMzMuNTk1LDM1MS4wNCAzMzMuNTk1LDM4Ny41OSAyMjkuOTk1LDM4Ny41OSAyMDkuOTk1LDM2OS4zMTUgICIvPgoJPHJlY3QgeD0iMTI2LjQwNSIgeT0iMzUxLjA0IiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgd2lkdGg9IjEwMy41OSIgaGVpZ2h0PSIzNi41NSIvPgoJPGNpcmNsZSBzdHlsZT0iZmlsbDojQzJGQkZGOyIgY3g9IjE0OC41NSIgY3k9IjIwMy43NjIiIHI9IjEwIi8+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNDMkZCRkY7IiBjeD0iMjAyLjg0OCIgY3k9IjIwMy43NjIiIHI9IjEwIi8+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNDMkZCRkY7IiBjeD0iMjU3LjE0NyIgY3k9IjIwMy43NjIiIHI9IjEwIi8+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiNDMkZCRkY7IiBjeD0iMzExLjQ0NSIgY3k9IjIwMy43NjIiIHI9IjEwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
                 />
                 <h3>Demo</h3>
             </a>
         </div>
     </div>
-
+    <!--The modal for demo-->
+    <div class="modal fade" id="demo" tabindex="-1" role="dialog">
+        <div class="modal-dialog custom-content" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close icon" data-dismiss="modal" aria-label="Close" role="button"></span>
+                    <h2 id="form_header">Demo</h2>
+                </div>
+                <div class="modal-body">
+                    <input type="button" value="Download" class="customBtn">
+                </div>
+            </div>
+        </div>
+    </div>
     <!--This is foot Section-->
     <footer class="foot container-fluid">
         <div class="row">
@@ -285,7 +352,8 @@
                 </div>
             </div>
     </footer>
-	<script src="script/script.js"></script>
-  <script src="script/component.js"></script>
+    <script src="/website_for_ad/script/script.js"></script>
+    <script src="/website_for_ad/script/component.js"></script>
 </body>
+
 </html>

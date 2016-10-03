@@ -8,13 +8,26 @@ $animation-1: all 0.3s;
     background: url("../mypic/background-1-1.png") no-repeat center center fixed;
     background-size: cover;
     height: 50em;
-
-    .myJumbotron {
+    .introContent {
+      margin-top: 3.5em;
+      a{
+        color: white;
+      }
+      a:hover{
+        background-color: #4d4d4d;
+        transition: 0.5s;
+      }
+      h1,h2,p{
+        color: white;
+      }
+    }
+//    top:-10em;
+/*    .myJumbotron {
         padding-top: 30em;
         margin: auto;
         background-color: transparent;
         text-align: center;
-    }
+    }*/
 }
 /*This is for main Section*/
 .main {
