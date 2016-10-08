@@ -1,6 +1,7 @@
 /*This is for intro element, which make nav-element of intro section will change via hover or click*/
 var avtgHeader = function() {
   $('.avtg').css('display', 'none');
+  $('.intro').css('background-image','url(../website_for_ad/mypic/home.jpg)')
   $('#avtg').css('display', 'block');
 //  console.log('success');//only for code test
 }
@@ -8,10 +9,13 @@ function avtg(e){
   if(e.target !== e.currentTarget){
     var clickedItem = e.target.id;
     var showAreaId='#'+clickedItem.match(/(.*?)_btn/)[1];
+    var picPath='url(../website_for_ad/mypic/'+clickedItem.match(/(.*?)_btn/)[1]+'.jpg)';
+    console.log(picPath);
     $('.avtg').css('display', 'none');
     $('#avtg').css('display', 'none');
     $(showAreaId).css('display', 'block');
-//    console.log(showAreaId);//only for code test
+    $('.intro').css('background-image',picPath);
+    //    console.log(showAreaId);//only for code test
   }
   e.stopPropagation();
 }
