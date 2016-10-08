@@ -3,6 +3,18 @@ $background-color-1: rgba(242, 242, 242, 0.9);
 $background-color-2: rgba(64, 64, 64, 0.9);
 $background-color-3: rgba(242, 242, 242, 1);
 $animation-1: all 0.3s;
+/*This is for the whole page*/
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
 /*This is for Intro Section*/
 .intro {
     background: url("../mypic/background-1-1.png") no-repeat center center fixed;
