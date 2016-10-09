@@ -1,5 +1,4 @@
 /*This is for variable*/
-
 $background-color-1: rgba(242, 242, 242, 0.9);
 $background-color-2: rgba(64, 64, 64, 0.9);
 $background-color-3: rgba(242, 242, 242, 1);
@@ -18,9 +17,24 @@ $animation-1: all 0.3s;
 }
 /*This is for Intro Section*/
 .intro {
-    background: url("../mypic/home.jpg") no-repeat center center fixed;
-    background-size: cover;
-    height: 50em;
+//    background: url("../mypic/avtg.jpg") no-repeat center center fixed;
+//    background-size: cover;
+    height: 40vw;
+    .tab-blur {
+
+    }
+    img{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+//      height: 100vh;
+      object-fit: cover;
+    }
+    .blur {
+
+    }
     .introContent {
       margin-top: 3.5em;
       a{
@@ -107,17 +121,6 @@ $animation-1: all 0.3s;
         display: block;
         padding: 3em;
     }
-}
-.mode_demo{
-
-  .customBtn {
-      height: 3em;
-      width: 80%;
-      background-color: #ff7769;
-      border: none;
-      border-radius: 5px;
-      margin: 0.5em 0;
-  }
 }
 /*This is for footer*/
 .foot {
