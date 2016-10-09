@@ -121,6 +121,16 @@ $animation-1: all 0.3s;
         padding: 3em;
     }
 }
+.mymodemo{
+  .customBtn {
+      height: 3em;
+      width: 50%;
+      background-color: #ff7769;
+      border: none;
+      border-radius: 5px;
+      margin: 0.5em 0;
+  }
+}
 /*This is for footer*/
 .mycontact{
   /*mybar*/
